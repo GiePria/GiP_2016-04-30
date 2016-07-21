@@ -4,8 +4,9 @@ $(document).ready(function () {
         var username = $('#username').val();
         var password = $('#password').val();
 
-        $("p").text("Your data: " email + " " username + " " password);
-
+        if (typeof email && username && password !== 'undefined') {
+            $(".success").show();
+        };
     });
-    $(".success").show();
+
 });
