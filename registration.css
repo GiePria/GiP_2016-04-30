@@ -1,1 +1,8 @@
-.success {display: none;}
+.success {
+    display: none;
+    font-size: 3em;
+};
+.error {
+   color: red; 
+};
+
