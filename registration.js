@@ -6,7 +6,10 @@ $(document).ready(function () {
 
         if (typeof email && username && password !== 'undefined') {
             $(".success").show();
+
         };
+       
+        alert("Please fill in all required fields!");
     });
 
 });
