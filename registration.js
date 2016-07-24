@@ -1,4 +1,33 @@
 $(document).ready(function () {
+    //validate registration form on submit
+    $("#registerForm").validate({
+        rules: {
+            username: {
+                required: true,
+                minlength: 3
+            },
+            password: {
+                required: true,
+                minlength: 6
+            },
+            email: {
+                required: true,
+                email: true
+            },
+        },
+        messages: {
+            username: {
+                required: "Please enter a username",
+                minlength: "Your username must consist of at least 3 characters"
+            },
+            password: {
+                required: "Please provide a password",
+                minlength: "Your password must be at least 6 characters long"
+            },
+            email: "Please enter a valid email address",
+        }
+    });
+    //...
     $(".button").on('click', function () {
         var email = $('#email').val();
         var username = $('#username').val();
@@ -6,10 +35,8 @@ $(document).ready(function () {
 
         if (typeof email && username && password !== 'undefined') {
             $(".success").show();
-
         };
-       
-        alert("Please fill in all required fields!");
+        $("#error").text("Please fill in all required fields!");
     });
 
 });

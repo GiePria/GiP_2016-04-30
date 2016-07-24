@@ -2,7 +2,11 @@
     display: none;
     font-size: 3em;
 };
-.error {
+#error {
+   display: none;
+   font-size: 3em;
    color: red; 
+   font-style: bold;
 };
+
 
