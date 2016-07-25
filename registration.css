@@ -1,11 +1,11 @@
 .success {
     display: none;
     font-size: 3em;
-};
-p {
-   font-size: 2em;
+}
+.error {
+   font-size: 1em;
    color: red; 
-   font-style: bold;
-};
+   
+}
 
 

@@ -33,13 +33,12 @@ $(document).ready(function () {
         var username = $('#username').val();
         var password = $('#password').val();
 
-        if (typeof email && username && password !== "undefined") {
-           if (validate === true) {  
-               $(".success").show();       
-           }    
+        if (email && username && password) {
+            $(".success").show();
+            event.preventDefault();
+        } else {
+            $("#error").show();
         }
-        $("#error").text("Please fill in all required fields!");
-
     });
 
 });
