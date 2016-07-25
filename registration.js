@@ -35,7 +35,9 @@ $(document).ready(function () {
 
         if (email && username && password) {
             $(".success").show();
+            $(".error").hide();
             event.preventDefault();
+            
         } else {
             $("#error").show();
         }
