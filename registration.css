@@ -7,5 +7,12 @@
    color: red; 
    
 }
-
-
+#ErrorEmail {
+    color: red;
+}
+#ErrorUsername {
+    color: red;
+}
+#ErrorPassword {
+    color: red;
+}

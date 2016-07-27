@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
-        <script type="text/javascript" src="registration.js"></script>
-        <link rel="stylesheet" href="registration.css" />
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="registration.js"></script>
+    <link rel="stylesheet" href="registration.css" />
 
 </head>
 
@@ -16,17 +17,19 @@
     <form action="" method="POST" id="registerForm">
         <fieldset>
             <legend>User details</legend>
-            <div class = "error">Please fill in all required fields!</div>
+            <div id="error">Please fill in all required fields!</id><br>
 
-            <label for="email">E-mail: </label><br>
-            <input id="email" type="email" name="email" class="required"><br>
+                <label for="email">E-mail: </label><br>
+                <input id="email" type="email" name="email" class="required">
+                <div id="ErrorEmail"></div>
 
-            <label for="username">User name:</label><br>
-            <input id="username" type="text" name="username" minlength="3" class="required"><br>
+                <label for="username">User name:</label><br>
+                <input id="username" type="text" name="username" minlength="3" class="required"><br>
+                <div id="ErrorUsername"></div>
 
-            <label for="password">Password:</label><br>
-            <input id="password" type="password" name="password" minlength="6" class="required">
-
+                <label for="password">Password:</label><br>
+                <input id="password" type="password" name="password" minlength="6" class="required">
+                <div id="ErrorPassword"></div>
         </fieldset>
         <button class="button">Submit</button>
 
